@@ -37,6 +37,8 @@ html {
     width: 2.4rem;
     height: 2.4rem;
     color: #fff;
+    animation: swing ease-in-out 5s infinite alternate;
+    animation-delay: 5s;
 }
 
 .bell-dot {
@@ -49,6 +51,48 @@ html {
     display: inline-block;
     top: 3%;
     right: 10%;
+    animation: jumpAnimation 10s infinite;
+    animation-delay: 5s;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(10deg);
+    }
+    20% {
+        transform: rotate(-10deg);
+    }
+    40% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes jumpAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    1.66% {
+        transform: translateY(-5px);
+    }
+    3.33% {
+        transform: translateY(0);
+    }
+    5% {
+        transform: translateY(-5px);
+    }
+    6.66% {
+        transform: translateY(0);
+    }
+    8.33% {
+        transform: translateY(-5px);
+    }
+    10% {
+        transform: translateY(0);
+    }
+}
+
+.bell-dot.hidden {
+    opacity: 0;
 }
 
 .notification-dropdown {
@@ -161,4 +205,8 @@ html {
 
 .sended-message {
     position: relative;
+}
+
+.paused-animation {
+    animation-play-state: paused;
 }
