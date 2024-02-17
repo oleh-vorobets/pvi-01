@@ -22,7 +22,7 @@ bellMenu.addEventListener('click', function (e) {
     ) {
         bellDropdown.style.display = 'none';
     } else {
-        bellDropdown.style.display = 'flex';
+        bellDropdown.style.display = 'grid';
     }
 });
 
