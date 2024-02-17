@@ -66,7 +66,7 @@ html {
     padding: 2rem 2rem;
 }
 
-.sended-message {
+.sended-text {
     display: flex;
     background-color: rgb(204, 204, 204);
     border: 1px solid rgb(155, 155, 155);
@@ -145,4 +145,20 @@ html {
 
 .closed {
     display: none;
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-right: 10px solid rgb(155, 155, 155);
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    transform: translate(-100%, 0);
+}
+
+.sended-message {
+    position: relative;
 }
