@@ -98,139 +98,28 @@
                 <button class="add-student-btn">+</button>
 
                 <table class="student-tbl">
-                    <thead>
-                        <tr>
-                            <th>
-                                <input
-                                    type="checkbox"
-                                    class="checkbox select-all"
-                                    onClick="toggle(this)"
-                                />
-                            </th>
-                            <th>Group</th>
-                            <th>Name</th>
-                            <th>Gender</th>
-                            <th>Birthday</th>
-                            <th>Status</th>
-                            <th>Options</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" class="checkbox" />
-                            </td>
-                            <td>PZ-23</td>
-                            <td>Oleh Vorobets</td>
-                            <td>M</td>
-                            <td>26.02.2005</td>
-                            <td><div class="status active"></div></td>
-                            <td>
-                                <button>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="currentColor"
-                                        class="w-6 h-6"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125"
-                                        />
-                                    </svg>
-                                </button>
-                                <button>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="currentColor"
-                                        class="w-6 h-6"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M6 18 18 6M6 6l12 12"
-                                        />
-                                    </svg>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" class="checkbox" />
-                            </td>
-                            <td>PZ-21</td>
-                            <td>John Rembo</td>
-                            <td>M</td>
-                            <td>19.09.2005</td>
-                            <td><div class="status"></div></td>
-                            <td>
-                                <button>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="currentColor"
-                                        class="w-6 h-6"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125"
-                                        />
-                                    </svg>
-                                </button>
-                                <button>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="currentColor"
-                                        class="w-6 h-6"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M6 18 18 6M6 6l12 12"
-                                        />
-                                    </svg>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" class="checkbox" />
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" class="checkbox" />
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </thead>
+                    <tr>
+                        <th>
+                            <input
+                                type="checkbox"
+                                class="checkbox select-all"
+                                onClick="toggle(this)"
+                            />
+                        </th>
+                        <th>Group</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Birthday</th>
+                        <th>Status</th>
+                        <th>Options</th>
+                    </tr>
+                    <tbody></tbody>
                 </table>
                 <div class="pagination">
-                    <button class="btn">
+                    <button class="pag-btn">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="btn-icon"
+                            class="pag-btn-icon"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -243,16 +132,18 @@
                             />
                         </svg>
                     </button>
-                    <a href="#" class="page-link page-link--current">1</a>
-                    <a href="#" class="page-link">2</a>
-                    <a href="#" class="page-link">3</a>
-                    <a href="#" class="page-link">4</a>
-                    <a href="#" class="page-link">5</a>
-                    <a href="#" class="page-link">6</a>
-                    <button class="btn">
+                    <a href="#" class="pag-page-link pag-page-link--current"
+                        >1</a
+                    >
+                    <a href="#" class="pag-page-link">2</a>
+                    <a href="#" class="pag-page-link">3</a>
+                    <a href="#" class="pag-page-link">4</a>
+                    <a href="#" class="pag-page-link">5</a>
+                    <a href="#" class="pag-page-link">6</a>
+                    <button class="pag-btn">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="btn-icon"
+                            class="pag-btn-icon"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -266,55 +157,65 @@
                         </svg>
                     </button>
                 </div>
-
-                <!-- Modal window -->
-                <div class="modal-student-content">
-                    <span class="exit">&times;</span>
-                    <h2 class="modal-title">Add student</h2>
-                    <hr />
-                    <div class="student-info">
-                        <span>Group</span>
-                        <form class="input-list">
-                            <input list="group-list" />
-                            <datalist id="group-list">
-                                <option>PZ-21</option>
-                                <option>PZ-22</option>
-                                <option>PZ-23</option>
-                                <option>PZ-24</option>
-                                <option>PZ-25</option>
-                                <option>PZ-26</option>
-                                <option>PZ-27</option>
-                            </datalist>
-                        </form>
-                        <span>First name</span>
-                        <input />
-                        <span>Last name</span>
-                        <input />
-                        <span>Gender</span>
-                        <form class="input-list">
-                            <input list="gender-list" />
-                            <datalist id="gender-list">
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Agender</option>
-                                <option>Bisexual</option>
-                                <option>Transgender</option>
-                            </datalist>
-                        </form>
-                        <span>Birthday</span>
-                        <input type="date" />
-                    </div>
-                    <hr />
-                    <div class="modal-btns">
-                        <button class="create-btn">Create</button>
-                        <button class="cancel-btn">Cancel</button>
-                    </div>
-                </div>
             </main>
+        </div>
+        <!-- Modal window -->
+        <div class="modal-student-content">
+            <span class="exit">&times;</span>
+            <h2 class="modal-title"></h2>
+            <hr />
+            <div class="student-info">
+                <span>Group</span>
+                <form class="input-list">
+                    <input list="group-list" class="group--inp" />
+                    <datalist id="group-list">
+                        <option>PZ-21</option>
+                        <option>PZ-22</option>
+                        <option>PZ-23</option>
+                        <option>PZ-24</option>
+                        <option>PZ-25</option>
+                        <option>PZ-26</option>
+                        <option>PZ-27</option>
+                    </datalist>
+                </form>
+                <span>First name</span>
+                <input class="first-name--inp" />
+                <span>Last name</span>
+                <input class="last-name--inp" />
+                <span>Gender</span>
+                <form class="input-list">
+                    <input list="gender-list" class="gender--inp" />
+                    <datalist id="gender-list">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </datalist>
+                </form>
+                <span>Birthday</span>
+                <input type="date" class="birthday--inp" />
+            </div>
+            <hr />
+            <div class="modal-btns">
+                <button class="create-btn">Create</button>
+                <button class="cancel-btn">Cancel</button>
+            </div>
+        </div>
+
+        <div class="modal-warning-content">
+            <span class="exit">&times;</span>
+            <h2 class="modal-title">Warning</h2>
+            <hr />
+            <span class="warning-text"
+                >Are you sure you want to delete user?</span
+            >
+            <hr />
+            <div class="modal-btns">
+                <button class="delete-btn">Ok</button>
+                <button class="cancel-btn">Cancel</button>
+            </div>
         </div>
     </body>
     <script src="js/dropdown-list.js"></script>
-    <script src="js/student-modal.js"></script>
+    <script src="js/configStudents.js"></script>
     <script>
         function toggle(source) {
             const checkboxes = document.querySelectorAll(
