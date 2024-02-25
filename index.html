@@ -7,7 +7,9 @@
 
         <link rel="stylesheet" href="css/nav-styles.css" />
         <link rel="stylesheet" href="css/menu-styles.css" />
-        <link rel="stylesheet" href="css/students-style.css" />
+        <link rel="stylesheet" href="css/students-styles.css" />
+
+        <link rel="manifest" href="manifest.json" />
     </head>
     <body>
         <header class="nav-bar">
@@ -98,25 +100,10 @@
                 <button class="add-student-btn">+</button>
 
                 <table class="student-tbl">
-                    <tr>
-                        <th>
-                            <input
-                                type="checkbox"
-                                class="checkbox select-all"
-                                onClick="toggle(this)"
-                            />
-                        </th>
-                        <th>Group</th>
-                        <th>Name</th>
-                        <th>Gender</th>
-                        <th>Birthday</th>
-                        <th>Status</th>
-                        <th>Options</th>
-                    </tr>
-                    <tbody></tbody>
+                    <tbody class="student-tbl--body"></tbody>
                 </table>
                 <div class="pagination">
-                    <button class="pag-btn">
+                    <button class="pag-btn pag-btn-left">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             class="pag-btn-icon"
@@ -140,7 +127,7 @@
                     <a href="#" class="pag-page-link">4</a>
                     <a href="#" class="pag-page-link">5</a>
                     <a href="#" class="pag-page-link">6</a>
-                    <button class="pag-btn">
+                    <button class="pag-btn pag-btn-right">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             class="pag-btn-icon"
